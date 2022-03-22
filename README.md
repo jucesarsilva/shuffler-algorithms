@@ -28,4 +28,6 @@ yarn start
 ```
 
 ## Sample
+[Demo]('https://jucesarsilva.github.io/shuffler-algorithms/')
+
 <img src="assets/sample.jpg" />

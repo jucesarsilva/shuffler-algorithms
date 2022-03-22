@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "http-server ./ ./node_modules/http-server/lib/http-server.js -c-1 -p 80",
-    "start:host": "http-server ./ ./node_modules/http-server/lib/http-server.js -c-1 -p 80 --proxy http://utilities.local.plurall.com.br"
+    "start:host": "http-server ./ ./node_modules/http-server/lib/http-server.js -c-1 -p 80 --proxy http://shuffler.com"
   },
   "browserslist": {
     "development": [

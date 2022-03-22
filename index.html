@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Utilities</title>
+  <meta name="julio_c.silva@outlook.com" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    html,
+    body {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    #main {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      min-height: 100vh;
+      background-color: aquamarine;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    th,
+    td {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="main">
+    <p>Shuffle Array Positions:</p>
+    <p>
+      <code>const array = [1,2,3]</code>
+    </p>
+
+    <form name="radios">
+      <p>
+        <span>
+          <input type="radio" id="sort" name="algorithm" value="sort" checked>
+          <label for="huey">Javascript Sort Method</label>
+        </span>
+        <span>
+          <input type="radio" id="fisher" name="algorithm" value="fisher">
+          <label for="huey">Fisher Shuffle Method</label>
+        </span>
+        <span>
+          <input type="radio" id="yates" name="algorithm" value="yates">
+          <label for="huey">Fisher Yates Shuffle Method</label>
+        </span>
+      </p>
+    </form>
+
+    <p>
+      <input type="number" id="round-text" placeholder="rounds of simulation" />
+      <button id="button-start">Start</button>
+    </p>
+
+    <br />
+
+    <table>
+      <thead>
+        <tr>
+          <th id="sort-type"></th>
+          <th>1ª position</th>
+          <th>2ª position</th>
+          <th>3ª position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Element nº 1</td>
+          <td id="one-n1">0</td>
+          <td id="two-n1">0</td>
+          <td id="tree-n1">0</td>
+        </tr>
+        <tr>
+          <td>Element nº 2</td>
+          <td id="one-n2">0</td>
+          <td id="two-n2">0</td>
+          <td id="tree-n2">0</td>
+        </tr>
+        <tr>
+          <td>Element nº 3</td>
+          <td id="one-n3">0</td>
+          <td id="two-n3">0</td>
+          <td id="tree-n3">0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      <label><input id="show-permutations" type=checkbox name="showPermutations"> show permutations</label>
+    </p>
+
+    <div id="permutations"></div>
+  </section>
+
+  <script src="src/index.js"></script>
+</body>
+
+</html>

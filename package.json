@@ -1,0 +1,25 @@
+{
+  "name": "shuffler-jabascript",
+  "private": true,
+  "version": "0.1.0",
+  "devDependencies": {
+    "http-server": "^14.0.0"
+  },
+  "scripts": {
+    "start": "http-server ./ ./node_modules/http-server/lib/http-server.js -c-1 -p 80",
+    "start:host": "http-server ./ ./node_modules/http-server/lib/http-server.js -c-1 -p 80 --proxy http://utilities.local.plurall.com.br"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  }
+}
